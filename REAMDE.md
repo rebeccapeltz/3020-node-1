@@ -47,37 +47,44 @@ n/6 //returns 0.16666666666666666
 
 ```
 
-
 ### Operators
 Operators are functions that have a symbolic shorthand; for example instead of saying "add" we have a plus sign "+" operator.  
 Every type has a [set of operators](https://www.w3schools.com/jsref/jsref_operators.asp) that can be applied to a variable of that type.
 
+### Logic
+In an imperative language, like JavaScript, the flow of the instructions is often linear in nature. In other words, when one command is complete, the next line of code is executed.  Sometimes we want to change the flow of the code based on the status of certain variables.  Variable contain the data, or state, of the program.  We are often writing data driven applications.  One of the ways to change the flow of the program is to use logic.  We can create logical expressions by using logical operators.  
+
+Whereas variables with a boolean type will always return true or false, we can create expressions which return true or false using logical operators.  We can also use AND `&&` and OR `||` to combine logical expression, thereby creating more complex logical tests.  Program flow is often described visually using flowcharts like this flowchart that looks at the value of temperature ![flowchart that looks at the value of temperature](https://www.edrawsoft.com/flowchart/images/flowchart-simple-sample.png).
+
+### Template Literals
+You'll learn that you can concatenate strings with other string and numbers to create new strings.  However, with ES6, we have **literal templates** to create string composed of literals and variables.  The syntax uses a pair backtick characters **`** (key to the left of the 1 on most keyboards) to enclose a set of strings and variables.  Variables are enclosed in **${}** within the backticks to show the value of the variable.
+```
+let s = "Hello"
+let name = "Sally"
+`${s} ${name}, how are you today?` // returns "Hello Sally, how are you today?
+```
+The ability to combine literals and variables can be use to create new strings or to log data using the console.log() function.  We call the placing of string within the template literal "interpolation".  A template literal may span multiple lines of text.
 
 ## Project Resources
 
 It might be helpful to review some additional resources as you work through
 this project:
 
-* [HTML and JavaScript](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
-* [Node modules and CommonJS](https://nodejs.org/docs/latest/api/modules.html)
+* [JavaScript Variable Declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Declarations)
+* [JavaScript Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+* [If then else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+* [ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+* [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+* [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
 ## Basic Requirements
 
 In order to successfully complete this exercise, you must find and complete the **TODOs** in the code:
 
-* Use script tag in html to make js/main.js available to index.html.
-* Use CommonJS require to make cowsay and getargs modules available to index.js.
-* Run index.html in the browser and get the cow to say "hello world".
-* Run index.js in the command line and get the cow to say "hello world".
-* Take screenshots of the browser and CLI output and put them in the screenshots directory.
-* Push your source code to your `master` branch.
-* Deploy your site to master branch.
-* Turn in 2 URLs: 1 to your code and 1 to the deployed code
+* 
 
 ## Stretch Goals
 
 If you want to push this project further, you can try some of the following:
 
-* Enhance the styling of the html page.
-* Change the way the cows looks in the html page
-* Change the eyes and tail of the cow in the node output
+* 
